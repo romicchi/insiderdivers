@@ -1,0 +1,95 @@
+body {
+    /* roboto */
+    font-family: 'Roboto', sans-serif;
+}
+
+.gb-red {
+    background-color: #BD0221;
+}
+
+.gb-lblue {
+    background-color: #3D3D3D;
+}
+
+.gb-black {
+    background-color: #1A1A2E;
+}
+
+.gb-blue {
+    background-color: #000B22;
+}
+
+.aside-bg-blue {
+    background-color: #16213E;
+}
+
+.gb-white {
+    background-color: #FAFAFA;
+}
+
+.gb-white-text {
+    color: #FAFAFA;
+}
+
+.card-red {
+    background-color: FC8787;
+}
+
+.card-yellow {
+    background-color: FCE987;
+}
+
+.card-blue {
+    background-color: 87B6FC;
+}
+
+.hidden {
+    display: none;
+}
+
+.hover-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05) !important;
+}
+
+/* Tables */
+.table {
+    background-color: #fff;
+}
+
+.table th {
+    background-color: #fff;
+    color: #000B22;
+}
+
+/* livewire powergrid pagination buttons color black */
+.bi bi-chevron-double-right {
+    color: #000B22;
+}
+
+.bi bi-chevron-double-left {
+    background-color: #000B22;
+}
+
+
+
+
+/* 
+.shadow-green {
+    box-shadow: -15px 20px 0px 0 #789461;
+}
+
+.shadow-green-reverse {
+    box-shadow: 20px 15px 0px 0 #789461;
+}
+
+.shadow-lgreen {
+    box-shadow: 20px 15px 0px 0 #DBE7C9;
+} */
+
+.text-danger {
+    color: #FF0000;
+}

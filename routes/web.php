@@ -26,4 +26,6 @@ Route::view('profile', 'profile')
 
 require __DIR__.'/auth.php';
 
-Route::get('/clients/manage', [ClientController::class, 'manage']);
+Route::get('/clients/management', function () {
+    return view('clients.management');
+});
