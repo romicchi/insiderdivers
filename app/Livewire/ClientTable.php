@@ -28,7 +28,9 @@ final class ClientTable extends PowerGridComponent
             Exportable::make('export')
                 ->striped()
                 ->type(Exportable::TYPE_XLS, Exportable::TYPE_CSV),
-            Header::make()->showSearchInput(),
+            Header::make()
+                ->showSearchInput()
+                ->showToggleColumns(),
             Footer::make()
                 ->showPerPage()
                 ->showRecordCount(),
@@ -48,7 +50,6 @@ final class ClientTable extends PowerGridComponent
     public function fields(): PowerGridFields
     {
         return PowerGrid::fields()
-            ->add('id')
             ->add('first_name')
             ->add('last_name')
             ->add('gender')
@@ -59,14 +60,12 @@ final class ClientTable extends PowerGridComponent
             ->add('nationality')
             ->add('interests')
             ->add('dietary_reqs')
-            ->add('status')
-            ->add('created_at');
+            ->add('status');
     }
 
     public function columns(): array
     {
         return [
-            Column::make('Id', 'id'),
             Column::make('First name', 'first_name')
                 ->sortable()
                 ->searchable(),
@@ -107,13 +106,6 @@ final class ClientTable extends PowerGridComponent
                 ->searchable(),
 
             Column::make('Status', 'status')
-                ->sortable()
-                ->searchable(),
-
-            Column::make('Created at', 'created_at_formatted', 'created_at')
-                ->sortable(),
-
-            Column::make('Created at', 'created_at')
                 ->sortable()
                 ->searchable(),
 
