@@ -29,3 +29,7 @@ require __DIR__.'/auth.php';
 Route::get('/clients/management', function () {
     return view('clients.management');
 });
+
+Route::get('/trips/management', function () {
+    return view('trips.management');
+});
