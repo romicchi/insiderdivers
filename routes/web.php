@@ -33,3 +33,7 @@ Route::get('/clients/management', function () {
 Route::get('/trips/management', function () {
     return view('trips.management');
 });
+
+Route::get('/flights/management', function () {
+    return view('flights.management');
+});
