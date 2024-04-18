@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\TripController;
+use App\Http\Controllers\FlightController;
+use App\Http\Controllers\LeaderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,18 +29,7 @@ Route::view('profile', 'profile')
 
 require __DIR__.'/auth.php';
 
-Route::get('/clients/management', function () {
-    return view('clients.management');
-});
-
-Route::get('/trips/management', function () {
-    return view('trips.management');
-});
-
-Route::get('/flights/management', function () {
-    return view('flights.management');
-});
-
-Route::get('/leaders/management', function () {
-    return view('leaders.management');
-});
+Route::get('/clients/management', [ClientController::class, 'manage'])->name('clients.management');
+Route::get('/trips/management', [TripController::class, 'manage'])->name('trips.management');
+Route::get('/flights/management', [FlightController::class, 'manage'])->name('flights.management');
+Route::get('/leaders/management', [LeaderController::class, 'manage'])->name('leaders.management');

@@ -16,7 +16,7 @@
     <div class="flex items-center">
         <div class="flex items-center ms-3">
           <div class="mx-2">
-              <a href="#" class="text-sm font-medium gb-white-text dark:text-gray-300 hover:text-gray-700 dark:hover:text-white">Profile</a>
+              <a href="{{ route('profile') }}" class="text-sm font-medium gb-white-text dark:text-gray-300 hover:text-gray-700 dark:hover:text-white">Profile</a>
           </div>
           <!-- notification bell & Logout -->
           <div class="mx-2">
@@ -40,31 +40,31 @@
    <div class="h-full px-3 pb-4 overflow-y-auto gb-lblue" style="background-color: #3D3D3D;">
       <ul class="space-y-2 font-medium">
          <li>
-            <a href="#" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group" style="background-color: #3D3D3D;">
+            <a href="{{ route('dashboard') }}" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group" style="background-color: #3D3D3D;">
                 <i class="fas fa-home gb-white-text transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
                 <span class="ms-3">Home</span>
             </a>
          </li>
          <li>
-            <a href="#" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="{{ route('clients.management') }}" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <i class="fas fa-users gb-white-text transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
                <span class="flex-1 ms-3 whitespace-nowrap">Clients</span>
             </a>
          </li>
          <li>
-            <a href="#" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="{{ route('trips.management') }}" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <i class="fas fa-route gb-white-text transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
                <span class="flex-1 ms-3 whitespace-nowrap">Trips</span>
             </a>
          </li>
          <li>
-            <a href="#" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="{{ route('flights.management') }}" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <i class="fas fa-plane gb-white-text transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
                <span class="flex-1 ms-3 whitespace-nowrap">Flights</span>
             </a>
          </li>
          <li>
-            <a href="#" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="{{ route('leaders.management') }}" class="flex items-center p-2 gb-white-text rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <i class="fas fa-user-tie gb-white-text transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></i>
                <span class="flex-1 ms-3 whitespace-nowrap">Personnel</span>
             </a>

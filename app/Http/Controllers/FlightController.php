@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ClientController extends Controller
+class FlightController extends Controller
 {
     public function manage() {
-        return view('clients.management');
+        return view('flights.management');
     }
 }
