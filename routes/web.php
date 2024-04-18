@@ -37,3 +37,7 @@ Route::get('/trips/management', function () {
 Route::get('/flights/management', function () {
     return view('flights.management');
 });
+
+Route::get('/leaders/management', function () {
+    return view('leaders.management');
+});
